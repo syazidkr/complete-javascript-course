@@ -138,57 +138,151 @@
 // n = n - 1; // 10
 // console.log(n)
 
-//Truthy and Falsy
-console.log(Boolean(0)); //falsey
-console.log(Boolean(undefined)); //falsey
-console.log(Boolean('Jonas')); //truthy
-console.log(Boolean({})); //truthy
-console.log(Boolean('')) //falsy
+// //Truthy and Falsy
+// console.log(Boolean(0)); //falsey
+// console.log(Boolean(undefined)); //falsey
+// console.log(Boolean('Jonas')); //truthy
+// console.log(Boolean({})); //truthy
+// console.log(Boolean('')) //falsy
 
-const money = 0;
-if(money) { // money akan dikonversi jadi boolean
-    console.log(`Don't spend it all`)
+// const money = 0;
+// if(money) { // money akan dikonversi jadi boolean
+//     console.log(`Don't spend it all`)
+// } else {
+//     console.log(`You should get a job!`)
+// }
+
+// let height;
+// if(height) {
+//     console.log(`YAY! Height is defined`)
+// } else {
+//     console.log(`Height is UNDEFINED`)
+// }
+
+// // Equality Operators == vs ===
+
+// // === strict equality opeator (including data type)
+
+// if (18 === 18) {
+//     console.log('kedua data sama')
+//  } else {
+//     console.log('kedua data berbeda')
+//  }
+
+// // == loose equality operator (text and number is the same)
+
+// if (18 == '18') {
+//     console.log('kedua data sama')
+//  } else {
+//     console.log('kedua data berbeda')
+//  }
+
+//  const favorite = prompt("what is your favorite number?")
+//  console.log(favorite);
+//  console.log(typeof favorite);
+
+//  if (favorite == 23) { //'23' == 23
+//     console.log ('Cool! 23 is amazing number')
+//  }
+
+// const favorite2 = Number(prompt("what is your favorite number?"))
+//  console.log(favorite2);
+//  console.log(typeof favorite2);
+
+//  if (favorite2 === 23) { //23 === 23
+//     console.log ('Cool! 23 is amazing number')
+//  }
+
+//  //Else If
+
+//   if (favorite2 === 23) { //23 === 23
+//     console.log ('Cool! 23 is amazing number')
+//  } else if (favorite2 === 7){
+//     console.log('7 is also cool number')
+//  } else {
+//     console.log('Numebr is not 23 or 7')
+//  }
+
+//  //Different Operator
+
+//  if (favorite2 !== 23) {
+//     console.log("Why not 23?")
+//  }
+
+//  // Boolean Logic
+
+//  // AND => both condition should TRUE
+//  // OR => minimum one condition should TRUE
+//  // NOT => inverts of the value 
+
+//  //Logical Operator
+
+// const hasDriversLicense = true; // variable A
+// const hasGoodVision = true; // variable B
+
+// console.log(hasDriversLicense && hasGoodVision); // true
+// console.log(hasDriversLicense || hasGoodVision); // true
+// console.log(!hasDriversLicense); // false
+
+// // const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// // if(hasDriversLicense && hasGoodVision) {
+// //     console.log('Sarah is able to drive!')
+// // } else {
+// //     console.log('Someone else should drive...')
+// // }
+
+// const isTired = false // variable C
+
+// // console.log(hasDriversLicense || hasGoodVision || isTired);
+
+// if(hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//    console.log('Someone else should drive...')
+// }
+
+//Switch Statement
+
+const day = prompt('What day is today?')
+
+// switch 
+// switch (day) {
+//    case 'Monday':
+//       console.log('Plan course structure')
+//       console.log('Go to coding meetup')
+//       break;
+//    case 'Tuesday':
+//       console.log('Prepare theory videos')
+//       break;
+//    case 'Wednesday':
+//    case 'Thursday':
+//       console.log('Write code examples')
+//       break;
+//    case 'Friday':
+//       console.log('Record videos')
+//       break;
+//    case 'Saturday':
+//    case 'Sunday':
+//       console.log('Enjoy the weekend')
+//       break;
+//    default:
+//       console.log('Not a valid day')
+// }
+
+// if
+
+if(day === 'Monday') {
+   console.log('Plan course structure')
+   console.log('Go to coding meetup')
+} else if (day === 'Tuesday') {
+   console.log('Prepare theory videos')
+} else if (day === 'Wednesday' || day === 'Thursday') {
+   console.log('Write code examples')
+} else if (day === 'Friday') {
+   console.log('Record videos')
+} else if (day === 'Saturday' || day === 'Sunday') {
+   console.log('Enjoy the weekend')
 } else {
-    console.log(`You should get a job!`)
+   console.log('Not a valid day')
 }
-
-let height;
-if(height) {
-    console.log(`YAY! Height is defined`)
-} else {
-    console.log(`Height is UNDEFINED`)
-}
-
-// Equality Operators == vs ===
-
-// === strict equality opeator (including data type)
-
-if (18 === 18) {
-    console.log('kedua data sama')
- } else {
-    console.log('kedua data berbeda')
- }
-
-// == loose equality operator (text and number is the same)
-
-if (18 == '18') {
-    console.log('kedua data sama')
- } else {
-    console.log('kedua data berbeda')
- }
-
- const favorite = prompt("what is your favorite number?")
- console.log(favorite);
- console.log(typeof favorite);
-
- if (favorite == 23) { //'23' == 23
-    console.log ('Cool! 23 is amazing number')
- }
-
-  const favorite2 = Number(prompt("what is your favorite number?"))
- console.log(favorite2);
- console.log(typeof favorite2);
-
- if (favorite === 23) { //23 === 23
-    console.log ('Cool! 23 is amazing number')
- }
